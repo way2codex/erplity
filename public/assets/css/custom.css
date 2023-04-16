@@ -1,0 +1,10 @@
+/* .form-group {
+    margin-bottom: 1px;
+} */
+.error {
+    color: #ff0000 !important;
+}
+
+.pad_0 {
+    padding: 0px !important;
+}

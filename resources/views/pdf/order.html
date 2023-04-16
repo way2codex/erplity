@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Invoice</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Lucida" Grande, sans-serif;
+        }
+
+        .section-2 {
+            margin-top: -7px;
+        }
+
+        .section-1 {
+            margin-left: 1px;
+        }
+
+
+        table {
+            border: 1px inset black;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            text-transform: capitalize;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .border {
+            border: 1px inset black;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: row;
+        }
+
+        .font-size {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table align="center">
+        <thead>
+            <tr class="border">
+                <td>
+                    <section class="section-1">
+                        <img src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back06.jpg" style="width: 80px;height: 80px;" alt="Logo">
+                    </section>
+                </td>
+                <td colspan="4" class="center">
+                    <h3 style="text-transform: uppercase;">Maruti agro center amd chemicles and others</h3>
+                    <span style="text-transform: capitalize;">80 Road Surendrangar, Rajsitapur, Prathugadh, Ceter</span><br />
+                    <strong>GST NO:- {{ Helper::setting()['gst_no'] ?? Helper::setting()['gst_no']}}</strong>
+                </td>
+            </tr>
+        </thead>
+        <thead>
+            <tr class="border font-size">
+                <td class="left" colspan="2">
+                    <span><strong>Order No :-</strong> {{ $data['order_no'] }}</span>
+                </td>
+                <td colspan="2" class="center">
+                    <span><strong>Order Date :-</strong> {{ date('d-m-Y',strtotime($data['order_date'])) }}</span>
+                </td>
+                <td class="right">
+                    <span><strong>Due Date :-</strong> {{ date('d-m-Y',strtotime($data['due_date'])) }}</span>
+                </td>
+            </tr>
+        </thead>
+
+        <thead>
+            <tr>
+                <th class="left">Name :</th>
+                <td colspan="4">Ramaji Bhai Bhudar Bhai</td>
+            </tr>
+            <tr>
+                <th class="left"> Mobile :</th>
+                <td colspan="4"> 957465819 </td>
+            </tr>
+
+            <tr>
+                <th class="left"> City :</th>
+                <td colspan="4"> Prathugadh</td>
+            </tr>
+
+            <tr>
+                <th class="left"> Address :</th>
+                <td colspan="4"> Surendrangar, Prathugadh, Rajsitapur-363320 </td>
+            </tr>
+        </thead>
+        <thead>
+            <tr class="border">
+                <th class="border left">Sr No</th>
+                <th class="border left">Product</th>
+                <th class="border left">Rate</th>
+                <th class="border left">Quantity</th>
+                <th class="border left">Amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="border">1</td>
+                <td class="border">DAP</td>
+                <td class="border">1</td>
+                <td class="border">1</td>
+                <td class="border">1</td>
+            </tr>
+
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <strong>Note: </strong>
+                    <div style="padding-top:100px">
+
+                    </div>
+                </td>
+                <td class="right">
+                    <div style="padding-top:100px">
+                        <strong>
+                            (Authorised Singnatory)
+                        </strong>
+
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

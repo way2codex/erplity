@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+<style>
+    .section-2{
+        margin-top: -7px;
+    }
+
+
+    table{
+        border:1px solid black;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td,th {
+        border:0px solid black;
+        text-transform: capitalize;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .border {
+        border: 1px solid black;
+    }
+
+    .flexbox {
+        display:flex;
+        justify-content:space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+</style>
+</head>
+<body>
+    
+    <table align="center">
+        <thead>
+            <tr class="center">
+                <td colspan="3">
+
+                   <div class="flexbox">
+                    <section class="section-1">
+                        <img src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back06.jpg" style="width: 80px;height: 80px;" alt="Logo">
+                    </section>
+
+                    <section class="section-2">
+                        <h3 style="text-transform: uppercase;">Maruti agro center</h3>
+                        <span style="text-transform: capitalize;">80 Road Surendrangar, Rajsitapur, Prathugadh, Ceter</span><br />
+                        <strong>GST NO:- ABC123456789</strong>
+                    </section>
+
+                    <section class="section-3">
+                        
+                    </section>
+                   </div>
+                </td>
+            </tr>
+
+            <tr class="border">
+                <td colspan="5">
+                    <div class="flexbox">
+                        <span><strong><span>Order No :- </span></strong> ORD123</span>
+                        <span><strong>Order Date :-</strong> 22-02-2022</span>
+                        <span><strong>Due Date :-</strong> 22-02-2022</span>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="left">
+                <th> Name :</th> 
+                <td>Ramaji Bhai Bhudar Bhai</td>
+            </tr>
+
+            <tr class="left">
+                <th> Mobile :</th> 
+                <td> 957465819 </td>
+            </tr>
+
+            <tr class="left">
+                <th> City :</th> 
+                <td> Prathugadh</td>
+            </tr>
+
+            <tr class="left">
+                <th> Address :</th> 
+                <td> Surendrangar, Prathugadh, Rajsitapur-363320 </td>
+            </tr>
+
+            <tr>
+                <tr>
+                    <td>Sr No</td>
+                    <td>Product</td>
+                    <td>Rate</td>
+                    <td>Quantity</td>
+                    <td>Amount</td>
+                </tr>
+            </tr>
+        </thead>
+
+
+    </table>
+</body>
+</html>
